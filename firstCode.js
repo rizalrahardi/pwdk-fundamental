@@ -94,3 +94,82 @@ console.log(s);
 let s1 = new Date();
 s.setDate(08);
 console.log(s1);
+
+// math operation
+let a = 5;
+let b = 5;
+let res = a + b;
+console.log(res);
+console.log(a + b);
+console.log(a * b);
+console.log(a - b);
+console.log(a / b);
+console.log(a % b);
+console.log(a ** b);
+
+// operator unary
+let x = 1;
+x = -x;
+console.log(x);
+
+// operator binary
+let y = 10,
+  z = 10;
+let resultnya = y + z;
+console.log(resultnya);
+
+// string concatenation with binary
+let world = "world";
+let hello = "hello" + " " + world;
+console.log(hello);
+
+let dunia = "hello" + " " + "world";
+console.log(dunia);
+
+console.log("1" + 2);
+console.log(2 + "1");
+console.log(1 + 1 + "1");
+console.log("1" + 1 + 1);
+
+// modify in place
+let n = 2;
+n += 10;
+n *= 3;
+n -= 6;
+n /= 2;
+console.log(n);
+
+// increment & decrement
+let counter = 2;
+counter++;
+console.log(counter);
+counter--;
+console.log(counter);
+
+// postfix & prefix
+let preCounter = 2;
+console.log(++preCounter);
+let postCounter = 2;
+console.log(postCounter++);
+
+// comparison operator
+let f = 20;
+let g = 20;
+let h = 10;
+let i = "20";
+// equal
+let comparison = f == g;
+console.log(comparison);
+console.log(f === g);
+console.log(f == h);
+console.log(f == i);
+console.log(f === i);
+// not equal
+console.log(f != g);
+console.log(f != h);
+console.log(f != i);
+console.log(f !== i);
+
+// greater and less than
+console.log(f > h);
+console.log(h < i);
