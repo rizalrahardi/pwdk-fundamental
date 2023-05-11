@@ -162,3 +162,21 @@ console.log(typeof inputData);
 let words = "An apple a day";
 words = words.replace(/a/gi, "*");
 console.log(words);
+
+// armstrong number
+
+let nums = 153;
+let count = 0;
+let a = nums.toString().length;
+
+for (i = 0; i < a; i++) {
+  console.log(nums.toString()[i]);
+  count += nums.toString()[i] ** a;
+  console.log(count);
+}
+
+if (count == nums) {
+  console.log(`amrstrong`);
+} else {
+  console.log(`not armstrong`);
+}
