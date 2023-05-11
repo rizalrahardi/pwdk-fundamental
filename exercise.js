@@ -85,6 +85,18 @@ for (i = 0; i < swapCase.length; i++) {
 }
 console.log(result.join(""));
 
+let swapCase1 = "The QuiCk Brown Fox";
+let newStr = "";
+for (let i = 0; i < swapCase.length; i++) {
+  var char = swapCase.charAt(i);
+  if (char === char.toUpperCase()) {
+    newStr += char.toLowerCase();
+  } else {
+    newStr += char.toUpperCase();
+  }
+}
+console.log(newStr);
+
 // find the largest numbers
 let findMax = Math.max(10, 100);
 console.log(findMax);
@@ -129,6 +141,10 @@ if (x > y && x > z) {
   }
 }
 
+let arraryNumber = [112378];
+arraryNumber.sort();
+console.log(arraryNumber.toString());
+
 // code to shows input type data
 
 let typeData = "[1, 2]";
@@ -144,5 +160,5 @@ console.log(typeof inputData);
 
 // change every letter a into *
 let words = "An apple a day";
-words = words.toLowerCase();
-console.log(words.replace(/a/g, "*"));
+words = words.replace(/a/gi, "*");
+console.log(words);
