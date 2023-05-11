@@ -69,4 +69,80 @@ let hasilBalik = inputKata.split("").reverse().join("");
 console.log(hasilBalik);
 
 // swap case
-let swapCase = "Hello World";
+let swapCase = "HeLlo WorLd";
+let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let lower = "abcdefghijklmnopqrstuvwxyz";
+let result = [];
+
+for (i = 0; i < swapCase.length; i++) {
+  if (upper.indexOf(swapCase[i]) !== -1) {
+    result.push(swapCase[i].toLowerCase());
+  } else if (lower.indexOf(swapCase[i] !== -1)) {
+    result.push(swapCase[i].toUpperCase());
+  } else {
+    result.push(swapCase[i]);
+  }
+}
+console.log(result.join(""));
+
+// find the largest numbers
+let findMax = Math.max(10, 100);
+console.log(findMax);
+
+// sort three number using conditional statement
+let numbers = [1, 3, 2];
+if (numbers[0] < numbers[1] && numbers[1] < numbers[2]) {
+  console.log(numbers[0], numbers[1], numbers[2]);
+} else if (numbers[0] < numbers[1] && numbers[2] < numbers[1]) {
+  console.log(numbers[0], numbers[2], numbers[1]);
+} else if (numbers[1] < numbers[0] && numbers[0] < numbers[2]) {
+  console.log(numbers[1], numbers[0], numbers[2]);
+} else if (numbers[1] < numbers[0] && numbers[2] < numbers[0]) {
+  console.log(numbers[2], numbers[1], numbers[0]);
+} else if (numbers[2] < numbers[0] && numbers[0] < numbers[1]) {
+  console.log(numbers[2], numbers[0], numbers[1]);
+} else {
+  console.log(numbers[1], numbers[2], numbers[0]);
+}
+
+// sort three number conditional statement
+var x = 0;
+var y = 2;
+var z = 4;
+if (x > y && x > z) {
+  if (y > z) {
+    console.log(x + ", " + y + ", " + z);
+  } else {
+    console.log(x + ", " + z + ", " + y);
+  }
+} else if (y > x && y > z) {
+  if (x > z) {
+    console.log(y + ", " + x + ", " + z);
+  } else {
+    console.log(y + ", " + z + ", " + x);
+  }
+} else if (z > x && z > y) {
+  if (x > y) {
+    console.log(z + ", " + x + ", " + y);
+  } else {
+    console.log(z + ", " + y + ", " + x);
+  }
+}
+
+// code to shows input type data
+
+let typeData = "[1, 2]";
+// console.log(typeof typeData);
+if (typeof typeData === false || typeData === true) {
+  console.log(typeof typeData);
+} else {
+  console.log(typeof typeData);
+}
+
+let inputData = 123;
+console.log(typeof inputData);
+
+// change every letter a into *
+let words = "An apple a day";
+words = words.toLowerCase();
+console.log(words.replace(/a/g, "*"));
