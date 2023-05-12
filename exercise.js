@@ -19,7 +19,7 @@ let triangle1 = (n) => {
   for (i = 1; i <= n; i++) {
     // console.log(i);
     for (j = 1; j <= i; j++) {
-      console.log(counter);
+      //   console.log(counter);
       //   console.log(j);
       if (counter <= 9) {
         result += `0${counter} `;
@@ -35,6 +35,7 @@ let triangle1 = (n) => {
 
 triangle1(4);
 
+////////
 // fizzbuzz
 
 let fizzbuzz = (n) => {
@@ -55,6 +56,7 @@ fizzbuzz(30);
 
 // calculate BMI
 let bmi = (weight, height) => {
+  //   let formula = weight / Math.pow(height, 2);
   let formula = weight / height ** 2;
   console.log(formula);
 
@@ -70,8 +72,7 @@ let bmi = (weight, height) => {
     console.log(`obesity`);
   }
 };
-
-bmi(80, 1.7);
+bmi(70, 1.7);
 
 // remove odd numbers in array
 let remOddNums = (r) => {
@@ -86,10 +87,23 @@ let remOddNums = (r) => {
 };
 remOddNums();
 
+let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let even = a.filter(result);
+function result(num) {
+  return num % 2 === 0;
+}
+console.log(even);
+
+// let a = [1, 2, 3, 4, 5, 6, 7, 8];
+// let answer = a.filter(hasil);
+// function hasil(num) {
+//   return num % 2 === 0;
+// }
+// console.log(answer);
+
 // convert string into array
 // console.log(string.split(" "));
-let toArr = () => {
-  const string = "hello world";
-  console.log(string.split(" "));
+let toArr = (str) => {
+  console.log(str.split(" "));
 };
-toArr();
+toArr("Hello world");
